@@ -11,68 +11,108 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./assets/style/styles.css" />
 
-    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="style.css" />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
+      * {
+        border: 1px solid red;
       }
     </style>
+    <title>Frontend Mentor | Results summary component</title>
   </head>
-  <body>
-    <main>
-      <section class="container">
-        <aside class="card left-card">
-          <div class="box left-box">
-            <h4>Your Result</h4>
-            <div class="circle">
-              <h1>76</h1>
-              <span>of 100</span>
+  <body class="min-h-screen">
+    <main class="h-screen">
+      <div
+        class="flex flex-col justify-between items-center min-[540px]:flex-row min-[540px]:w-[500px] min-[540px]:bg-red-500"
+      >
+        <section
+          class="p-4 w-full flex flex-col text-center text-white bg-gradient-to-t from-royal-blue to-slate-blue border rounded-b-3xl"
+        >
+          <div>
+            <h2 class="p-2 text-xl text-light-lav">Your Result</h2>
+
+            <div
+              id="circle"
+              class="w-[150px] h-[150px] flex justify-center items-center flex-col bg-gradient-to-t from-persian-blue to-violet-blue mx-auto rounded-[50%]"
+            >
+              <h1 class="text-[4rem] -mb-[12px]">76</h1>
+              <span class="text-light-lav"> of 100 </span>
             </div>
-            <h3>Great</h3>
-            <p>
-              You scored higher than 65% of the people who have taken these
-              tests.
-            </p>
+            <div
+              class="flex flex-col justify-center items-center"
+              id="text-great"
+            >
+              <h2 class="p-2 text-xl font-bold">Great</h2>
+              <p class="w-[80%] text-light-lav">
+                You scored higher than 65% of the people who have taken these
+                tests.
+              </p>
+            </div>
           </div>
-        </aside>
-        <aside class="card right-card">
-          <div class="box right-box">
-            <h4>Summary</h4>
-            <div class="summary-box reaction">
-              <img src="./assets/images/icon-reaction.svg" alt="reaction" />
-              Reaction <span><strong>80</strong> / 100</span>
+        </section>
+
+        <section class="flex-1 w-full p-4 bg-white">
+          <div class="flex flex-col gap-2">
+            <h2 class="text-xl font-bold">Summary</h2>
+
+            <div
+              id="reaction"
+              class="flex justify-between p-3 bg-light-red bg-opacity-10"
+            >
+              <span class="flex gap-1 font-bold">
+                <img src="./assets/images/icon-reaction.svg" alt="reaction" />
+                Reaction
+              </span>
+              <span> <span class="font-bold">80</span>&nbsp;/&nbsp;100 </span>
             </div>
-            <div class="summary-box memory">
-              <img src="./assets/images/icon-memory.svg" alt="" />
-              Memory <span><strong>92</strong> / 100 </span>
+            <div
+              id="memory"
+              class="flex justify-between p-3 bg-orange-yellow bg-opacity-10"
+            >
+              <span class="flex gap-1 font-bold">
+                <img src="./assets/images/icon-memory.svg" alt="memory" />
+                Memory
+              </span>
+              <span> <span class="font-bold">92</span>&nbsp;/&nbsp;100 </span>
             </div>
-            <div class="summary-box verbal">
-              <img src="./assets/images/icon-verbal.svg" alt="" />
-              Verbal <span><strong>61</strong> / 100</span>
+            <div
+              id="verbal"
+              class="flex justify-between p-3 bg-green-teal bg-opacity-10"
+            >
+              <span class="flex gap-1 font-bold">
+                <img src="./assets/images/icon-verbal.svg" alt="verbal" />
+                Verbal
+              </span>
+              <span> <span class="font-bold">61</span>&nbsp;/&nbsp;100 </span>
             </div>
-            <div class="summary-box visual">
-              <img src="./assets/images/icon-visual.svg" alt="" />
-              Visual <span><strong>72</strong> / 100</span>
+            <div
+              id="Visual"
+              class="flex justify-between p-3 bg-cobalt-blue bg-opacity-10"
+            >
+              <span class="flex gap-1 font-bold">
+                <img src="./assets/images/icon-visual.svg" alt="Visual" />
+                Visual
+              </span>
+              <span> <span class="font-bold">72</span>&nbsp;/&nbsp;100 </span>
             </div>
-            <button id="continue-btn">Continue</button>
+
+            <button
+              type="submit"
+              class="w-full p-4 rounded-[2rem] mt-5 text-xl bg-dark-gb text-white hover:bg-gradient-to-tr hover:from-royal-blue hover:to-slate-blue"
+            >
+              Continue
+            </button>
           </div>
-        </aside>
-      </section>
+        </section>
+      </div>
     </main>
 
-    <div class="attribution">
+    <footer class="text-center">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >. Coded with &hearts; by <a href="#">Andrew</a>.
+    </footer>
   </body>
 </html>

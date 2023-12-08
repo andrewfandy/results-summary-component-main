@@ -14,22 +14,23 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <style>
+    <!-- DEBUGGING -->
+    <!-- <style>
       * {
         border: 1px solid red;
       }
-    </style>
+    </style> -->
     <title>Frontend Mentor | Results summary component</title>
   </head>
-  <body class="min-h-screen">
-    <main class="h-screen">
+  <body class="min-h-screen min-[540px]:relative">
+    <main class="h-screen min-[540px]:flex">
       <div
-        class="flex flex-col justify-between items-center min-[540px]:flex-row min-[540px]:w-[500px] min-[540px]:bg-red-500"
+        class="flex flex-col justify-between items-center m-auto min-[540px]:flex-row min-[540px]:max-w-2xl"
       >
         <section
-          class="p-4 w-full flex flex-col text-center text-white bg-gradient-to-t from-royal-blue to-slate-blue border rounded-b-3xl"
+          class="h-[40%] min-[540px]:flex-1 min-[540px]:w-[50%] p-5 w-full flex flex-col justify-center items-center text-white bg-gradient-to-t from-royal-blue to-slate-blue border min-[540px]:rounded-3xl rounded-b-3xl"
         >
-          <div>
+          <div class="text-center">
             <h2 class="p-2 text-xl text-light-lav">Your Result</h2>
 
             <div
@@ -52,8 +53,8 @@
           </div>
         </section>
 
-        <section class="flex-1 w-full p-4 bg-white">
-          <div class="flex flex-col gap-2">
+        <section class="flex flex-col justify-center items-center h-[60%] w-full min min-[540px]:w-[50%] p-4 bg-white">
+          <div class="w-full flex flex-col gap-2">
             <h2 class="text-xl font-bold">Summary</h2>
 
             <div
@@ -99,7 +100,7 @@
 
             <button
               type="submit"
-              class="w-full p-4 rounded-[2rem] mt-5 text-xl bg-dark-gb text-white hover:bg-gradient-to-tr hover:from-royal-blue hover:to-slate-blue"
+              class="w-full p-2 rounded-[2rem] mt-5 text-xl bg-dark-gb text-white hover:bg-gradient-to-tr hover:from-royal-blue hover:to-slate-blue"
             >
               Continue
             </button>
@@ -108,7 +109,7 @@
       </div>
     </main>
 
-    <footer class="text-center">
+    <footer class="text-center min-[540px]:fixed min-[540px]:bottom-0 min-[540px]:w-full">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a

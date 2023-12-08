@@ -15,11 +15,7 @@
 .DS_Store
 .prettierignore
 
-tailwind.config.js
 style-guide.md
 README-template.md
-package.json
-data.json
-package-lock.json
 node_modules/
-design/
+

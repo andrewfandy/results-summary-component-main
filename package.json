@@ -4,7 +4,7 @@
   "description": "Frontend Mentor Challenge, slicing UI",
   "main": "index.html",
   "scripts": {
-    "dev-build": "npx tailwindcss -i tailwind.css -o style.css --watch" 
+    "dev-build": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/style.css --watch" 
   },
   "repository": {
     "type": "git",

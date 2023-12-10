@@ -16,19 +16,20 @@
 
     <!-- DEBUGGING -->
     <!-- <style>
-      * {
+      footer,
+      section:nth-child(2) {
         border: 1px solid red;
       }
     </style> -->
     <title>Frontend Mentor | Results summary component</title>
   </head>
-  <body class="min-h-screen min-[540px]:relative">
-    <main class="h-screen min-[540px]:flex">
+  <body class="min-h-screen">
+    <main class="h-screen flex flex-col justify-between min-[540px]:flex">
       <div
-        class="flex flex-col justify-between items-center m-auto min-[540px]:flex-row min-[540px]:max-w-2xl"
+        class="h-full flex flex-col justify-between items-center m-auto min-[540px]:flex-row min-[540px]:max-w-2xl"
       >
         <section
-          class="h-[40%] min-[540px]:flex-1 min-[540px]:w-[50%] p-5 w-full flex flex-col justify-center items-center text-white bg-gradient-to-t from-royal-blue to-slate-blue border min-[540px]:rounded-3xl rounded-b-3xl"
+          class="flex-[0.95] min-[540px]:flex-1 min-[540px]:w-[50%] p-5 w-full flex flex-col justify-center items-center text-white bg-gradient-to-t from-royal-blue to-slate-blue border min-[540px]:rounded-3xl rounded-b-3xl"
         >
           <div class="text-center">
             <h2 class="p-2 text-xl text-light-lav">Your Result</h2>
@@ -53,7 +54,9 @@
           </div>
         </section>
 
-        <section class="flex flex-col justify-center items-center h-[60%] w-full min min-[540px]:w-[50%] p-4 bg-white">
+        <section
+          class="flex-1 flex flex-col justify-center items-center h-[60% w-full min min-[540px]:w-[50%] p-4 bg-white"
+        >
           <div class="w-full flex flex-col gap-2">
             <h2 class="text-xl font-bold">Summary</h2>
 
@@ -107,13 +110,13 @@
           </div>
         </section>
       </div>
+      <footer class="text-center mt-auto min-[540px]:w-full">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded with &hearts; by
+        <a href="https://github.com/andrewfandy">Andrew</a>.
+      </footer>
     </main>
-
-    <footer class="text-center min-[540px]:fixed min-[540px]:bottom-0 min-[540px]:w-full">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded with &hearts; by <a href="#">Andrew</a>.
-    </footer>
   </body>
 </html>

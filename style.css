@@ -542,8 +542,20 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.m-4{
-  margin: 1rem;
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.z-20{
+  z-index: 20;
 }
 
 .m-auto{
@@ -555,12 +567,25 @@ video {
   margin-right: auto;
 }
 
+.my-0{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .-mb-\[12px\]{
   margin-bottom: -12px;
 }
 
 .mt-5{
   margin-top: 1.25rem;
+}
+
+.mt-\[500px\]{
+  margin-top: 500px;
+}
+
+.mt-auto{
+  margin-top: auto;
 }
 
 .flex{
@@ -571,16 +596,12 @@ video {
   height: 150px;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .h-\[40\%\]{
   height: 40%;
 }
 
-.h-\[60\%\]{
-  height: 60%;
+.h-screen{
+  height: 100vh;
 }
 
 .h-full{
@@ -607,6 +628,22 @@ video {
   flex: 1 1 0%;
 }
 
+.flex-\[0\.75\]{
+  flex: 0.75;
+}
+
+.flex-\[1\]{
+  flex: 1;
+}
+
+.flex-\[1\.25\]{
+  flex: 1.25;
+}
+
+.flex-\[0\.95\]{
+  flex: 0.95;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -631,16 +668,16 @@ video {
   gap: 0.5rem;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .rounded-\[2rem\]{
   border-radius: 2rem;
 }
 
 .rounded-\[50\%\]{
   border-radius: 50%;
-}
-
-.rounded-\[1\.5rem\]{
-  border-radius: 1.5rem;
 }
 
 .rounded-b-3xl{
@@ -650,16 +687,6 @@ video {
 
 .border{
   border-width: 1px;
-}
-
-.border-rose-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(244 63 94 / var(--tw-border-opacity));
-}
-
-.border-yellow-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(234 179 8 / var(--tw-border-opacity));
 }
 
 .bg-cobalt-blue{
@@ -697,14 +724,19 @@ video {
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
+.bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
 .bg-yellow-500{
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
-.bg-red-50{
+.bg-red-400{
   --tw-bg-opacity: 1;
-  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-10{
@@ -792,6 +824,13 @@ video {
   --tw-gradient-to: hsl(252, 100%, 67%) var(--tw-gradient-to-position);
 }
 
+@media (max-width: 281px){
+  .max-\[281px\]\:bg-yellow-500{
+    --tw-bg-opacity: 1;
+    background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+  }
+}
+
 @media (min-width: 540px){
   .min-\[540px\]\:fixed{
     position: fixed;
@@ -805,133 +844,16 @@ video {
     bottom: 0px;
   }
 
-  .min-\[540px\]\:left-0{
-    left: 0px;
-  }
-
-  .min-\[540px\]\:left-\[50\%\]{
-    left: 50%;
-  }
-
-  .min-\[540px\]\:m-auto{
-    margin: auto;
-  }
-
-  .min-\[540px\]\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .min-\[540px\]\:my-0{
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
   .min-\[540px\]\:flex{
     display: flex;
-  }
-
-  .min-\[540px\]\:h-full{
-    height: 100%;
-  }
-
-  .min-\[540px\]\:h-\[540px\]{
-    height: 540px;
-  }
-
-  .min-\[540px\]\:h-\[200px\]{
-    height: 200px;
-  }
-
-  .min-\[540px\]\:h-\[500px\]{
-    height: 500px;
-  }
-
-  .min-\[540px\]\:h-\[450px\]{
-    height: 450px;
-  }
-
-  .min-\[540px\]\:h-\[400px\]{
-    height: 400px;
-  }
-
-  .min-\[540px\]\:h-\[20vh\]{
-    height: 20vh;
-  }
-
-  .min-\[540px\]\:h-\[10vh\]{
-    height: 10vh;
-  }
-
-  .min-\[540px\]\:h-\[15vh\]{
-    height: 15vh;
-  }
-
-  .min-\[540px\]\:h-\[100vh\]{
-    height: 100vh;
-  }
-
-  .min-\[540px\]\:h-\[90vh\]{
-    height: 90vh;
-  }
-
-  .min-\[540px\]\:h-\[50vh\]{
-    height: 50vh;
-  }
-
-  .min-\[540px\]\:h-fit{
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-
-  .min-\[540px\]\:h-1{
-    height: 0.25rem;
-  }
-
-  .min-\[540px\]\:h-\[h-full\]{
-    height: h-full;
-  }
-
-  .min-\[540px\]\:w-\[500px\]{
-    width: 500px;
-  }
-
-  .min-\[540px\]\:w-\[40\%\]{
-    width: 40%;
-  }
-
-  .min-\[540px\]\:w-\[60\%\]{
-    width: 60%;
-  }
-
-  .min-\[540px\]\:w-\[45\%\]{
-    width: 45%;
-  }
-
-  .min-\[540px\]\:w-\[55\%\]{
-    width: 55%;
   }
 
   .min-\[540px\]\:w-\[50\%\]{
     width: 50%;
   }
 
-  .min-\[540px\]\:w-\[540px\]{
-    width: 540px;
-  }
-
-  @media (min-width: 540px){
-    .min-\[540px\]\:min-\[540px\]\:w-\[50\%\]{
-      width: 50%;
-    }
-  }
-
   .min-\[540px\]\:w-full{
     width: 100%;
-  }
-
-  .min-\[540px\]\:max-w-lg{
-    max-width: 32rem;
   }
 
   .min-\[540px\]\:max-w-2xl{
@@ -948,10 +870,5 @@ video {
 
   .min-\[540px\]\:rounded-3xl{
     border-radius: 1.5rem;
-  }
-
-  .min-\[540px\]\:bg-red-500{
-    --tw-bg-opacity: 1;
-    background-color: rgb(239 68 68 / var(--tw-bg-opacity));
   }
 }

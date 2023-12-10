@@ -4,7 +4,7 @@
   "description": "Frontend Mentor Challenge, slicing UI",
   "main": "index.html",
   "scripts": {
-    "dev-build": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/style.css --watch" 
+    "dev-build": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/andrewfandy/results-summary-component-main#readme",
   "devDependencies": {
     "tailwindcss": "^3.3.6"
+  },
+  "dependencies": {
+    "package": "^1.0.1"
   }
 }
